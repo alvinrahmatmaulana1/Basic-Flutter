@@ -1,4 +1,14 @@
 import 'package:belajar/container_widget.dart';
+import 'package:belajar/latihan1_widget.dart';
+import 'package:belajar/latihan2_widget.dart';
+import 'package:belajar/latihan3_widget.dart';
+import 'package:belajar/listview/latihan_list.dart';
+import 'package:belajar/listview/list_basic.dart';
+import 'package:belajar/listview/list_builder.dart';
+import 'package:belajar/listview/list_sparated.dart';
+import 'package:belajar/row_widget.dart';
+import 'package:belajar/column_widget.dart';
+import 'package:belajar/row_column_widget.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,7 +29,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.amber,
           title: Text("Belajar Flutter"),
         ),
-        body: BelajarContainer(),
+        body: LatihanList(),
       ),
     );
   }
