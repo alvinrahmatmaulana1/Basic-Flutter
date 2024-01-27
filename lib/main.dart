@@ -1,4 +1,8 @@
 import 'package:belajar/container_widget.dart';
+import 'package:belajar/grid/grid_basic.dart';
+import 'package:belajar/grid/grid_builder.dart';
+import 'package:belajar/grid/grid_count.dart';
+import 'package:belajar/grid/latihan_grid.dart';
 import 'package:belajar/latihan1_widget.dart';
 import 'package:belajar/latihan2_widget.dart';
 import 'package:belajar/latihan3_widget.dart';
@@ -29,7 +33,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.amber,
           title: Text("Belajar Flutter"),
         ),
-        body: LatihanList(),
+        body: LatihanGrid(),
       ),
     );
   }
