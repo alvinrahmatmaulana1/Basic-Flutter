@@ -13,6 +13,9 @@ import 'package:belajar/listview/list_sparated.dart';
 import 'package:belajar/row_widget.dart';
 import 'package:belajar/column_widget.dart';
 import 'package:belajar/row_column_widget.dart';
+import 'package:belajar/screens/home_screen.dart';
+import 'package:belajar/screens/menu_screen.dart';
+import 'package:belajar/screens/second_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -27,14 +30,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "ini Project Flutter Pertamaku",
-      home: Scaffold(
-        appBar: AppBar(
-          centerTitle: true,
-          backgroundColor: Colors.amber,
-          title: Text("Belajar Flutter"),
-        ),
-        body: LatihanGrid(),
-      ),
+      // home: HomeScreen(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => NavigationMenu(),
+        'second': (context) => SecondScreen(),
+        'thrid': (context) => ThirdScreen(),
+      },
     );
   }
 }
