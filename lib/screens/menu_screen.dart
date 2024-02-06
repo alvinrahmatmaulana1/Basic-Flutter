@@ -1,3 +1,4 @@
+import 'package:belajar/screens/booking_sea.dart';
 import 'package:belajar/screens/home_screen.dart';
 import 'package:belajar/screens/input_form_screen.dart';
 import 'package:belajar/screens/list_screen.dart';
@@ -17,7 +18,7 @@ class _NavigationMenuState extends State<NavigationMenu> {
   List _pages = [
     HomeScreen(),
     ListSeaScreen(),
-    BelajarForm()
+    TiketSea()
   ];
 
   _changeTab(int index){
